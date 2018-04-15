@@ -136,6 +136,13 @@
                 android:gravity="center"
                 android:text="Bathroom"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textBath"
+                android:textColor="#000"
+                android:text="num"/>
 
             <SeekBar
                 android:layout_width="match_parent"
@@ -155,6 +162,14 @@
                 android:gravity="center"
                 android:text="Bedroom"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textBed"
+                android:textColor="#000"
+                android:text="num"/>
+
 
             <SeekBar
                 android:layout_width="match_parent"
@@ -171,6 +186,7 @@
         android:textColor="#ffff"
         android:background="#e74c3c"
         android:textStyle="bold"
+        android:id="@+id/btnSearch"
         android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
