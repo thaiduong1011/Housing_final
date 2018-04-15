@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
+<<<<<<< HEAD
     <LinearLayout
         android:layout_marginTop="10dp"
         android:layout_margin="10dp"
@@ -188,5 +188,11 @@
         android:textStyle="bold"
         android:id="@+id/btnSearch"
         android:layout_gravity="center_horizontal"/>
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am Search" />
+>>>>>>> cfe7d8609576e11717703bc37ab1e0b55d9ea900
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

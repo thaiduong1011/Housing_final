@@ -20,7 +20,21 @@ public class PagerAdapter  extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return mFragments.get(position);
+        Fragment frag=null;
+        switch (position){
+            case 0:
+                frag=new HomeFragment();
+                break;
+            case 1:
+                frag=new SearchFragment();
+                break;
+            case 2:
+                frag=new SaveFragment();
+                break;
+            case 3:
+                frag=new NotiFragment();
+        }
+        return frag;
     }
 
     @Override
