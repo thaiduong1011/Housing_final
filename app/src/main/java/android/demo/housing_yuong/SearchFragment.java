@@ -20,7 +20,6 @@ public class SearchFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-<<<<<<< HEAD
         View view = inflater.inflate(R.layout.fragment_search, container, false);
 
         Anhxa(view);
@@ -118,8 +117,5 @@ public class SearchFragment extends Fragment {
         txtBath = view.findViewById(R.id.textBath);
         seekBath = view.findViewById(R.id.seekbarBath);
         btnSearch = view.findViewById(R.id.btnSearch);
-=======
-        return inflater.inflate(R.layout.fragment_noti, container, false);
->>>>>>> cfe7d8609576e11717703bc37ab1e0b55d9ea900
     }
 }

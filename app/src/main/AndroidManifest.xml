@@ -2,19 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.demo.housing_yuong">
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-=======
-
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
->>>>>>> cfe7d8609576e11717703bc37ab1e0b55d9ea900
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,12 +16,8 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-<<<<<<< HEAD
             android:value="AIzaSyB1yV5420cYb8aBuaGYRBwa1SZDUWgyu9U" />
 
-=======
-            android:value="AIzaSyDHPJRwSYmhSejOkAGw91YwGNYy-TBbXIs"></meta-data>
->>>>>>> cfe7d8609576e11717703bc37ab1e0b55d9ea900
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
