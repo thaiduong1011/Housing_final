@@ -25,6 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".module.SearchResultActivity" />
+        <activity android:name=".module.DetailActivity" />
+        <activity android:name=".module.MapActivity"></activity>
     </application>
 
 </manifest>

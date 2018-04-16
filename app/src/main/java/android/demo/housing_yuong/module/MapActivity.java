@@ -17,6 +17,7 @@ public class MapActivity extends AppCompatActivity implements OnStreetViewPanora
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+        getSupportActionBar().hide();
 
         streetViewPanoramaFragment =
                 (StreetViewPanoramaFragment) getFragmentManager()

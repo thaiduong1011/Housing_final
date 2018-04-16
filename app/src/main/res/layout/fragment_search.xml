@@ -30,7 +30,7 @@
                 android:gravity="center"
                 android:id="@+id/textMoney"
                 android:textColor="#000"
-                android:text="num"/>
+                android:text="0"/>
 
             <SeekBar
                 android:layout_width="match_parent"
@@ -69,7 +69,7 @@
                 android:gravity="center"
                 android:id="@+id/textBuiding"
                 android:textColor="#000"
-                android:text="num"/>
+                android:text="0"/>
 
             <SeekBar
                 android:layout_width="match_parent"
@@ -142,7 +142,7 @@
                 android:gravity="center"
                 android:id="@+id/textBath"
                 android:textColor="#000"
-                android:text="num"/>
+                android:text="0"/>
 
             <SeekBar
                 android:layout_width="match_parent"
@@ -168,7 +168,7 @@
                 android:gravity="center"
                 android:id="@+id/textBed"
                 android:textColor="#000"
-                android:text="num"/>
+                android:text="0"/>
 
 
             <SeekBar
@@ -189,9 +189,5 @@
         android:id="@+id/btnSearch"
         android:layout_gravity="center_horizontal"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="I am Search" />
 
 </LinearLayout>

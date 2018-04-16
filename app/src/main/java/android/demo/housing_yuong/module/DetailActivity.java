@@ -1,7 +1,6 @@
 package android.demo.housing_yuong.module;
 
 import android.content.Intent;
-import android.demo.housing_yuong.MainActivity;
 import android.demo.housing_yuong.R;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
+
     private ImageView img;
     private TextView txtTitle;
     private TextView txtPrice;
@@ -26,6 +26,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        getSupportActionBar().hide();
         init();
 
         Intent intent = getIntent();
@@ -55,7 +56,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     void add(int i){
-        Product product = MainActivity.products.get(i);
+        Product product = SearchResultActivity.products.get(i);
 
         img.setImageResource(product.getImage());
         txtUsableArea.setText(product.getUsableArea() + "m2");
@@ -63,11 +64,9 @@ public class DetailActivity extends AppCompatActivity {
         txtAddress.setText(product.getAddress());
         txtPrice.setText(product.getPrice() + " " +"$");
         txtRoom.setText(product.getBathroom() + " bathroom | "
-        + product.getBedroom() + " bedroom");
+                + product.getBedroom() + " bedroom");
         txtType.setText(product.getPropertyType());
         txtDes.setText("Vinhomes Central Park is a new development that is in the heart of everything that Ho Chi Minh has to offer. Located in Binh Thanh District, it is within easy reach of the new Metro Line No. 1 Ben Thanh – Suoi Tien, 4 minutes to downtown District 1 and 3 minutes to the new Thu Thiem urban area in the near future.\n" +
                 "Taking inspiration from the famous New York’s Central Park, Vinhomes Central Park will be the newest green urban area that is modern and the most advanced in Vietnam. With its location beside the river that stretches to over 1km, Vinhomes Central Park will bring a green living space in the heart of Ho Chi Minh City and with nearly 14 hectares of parkland and greenery, will provide a fantastic open space for people to escape for some peace and tranquility.");
     }
-
-
 }

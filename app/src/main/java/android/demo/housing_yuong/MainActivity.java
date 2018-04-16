@@ -1,8 +1,5 @@
 package android.demo.housing_yuong;
 
-import android.demo.housing_yuong.module.Location;
-import android.demo.housing_yuong.module.Product;
-import android.demo.housing_yuong.module.PropertyType;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -10,12 +7,10 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
-    public static ArrayList<Product> products = new ArrayList<>();
     ViewPager viewPager;
     TabLayout tabLayout;
+    public static PagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setupTabIcons();
 
         //Add fragments
-        PagerAdapter adapter = new PagerAdapter(getSupportFragmentManager());
+        adapter = new PagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new HomeFragment());
         adapter.addFragment(new SearchFragment());
         adapter.addFragment(new SaveFragment());
@@ -83,55 +78,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void add(){
-        products.add(new Product("Modern 3 bedroom apartment with panoramic river view in Binh Thanh District",
-                "Binh Thanh District", 1000, PropertyType.APARTMENT.toString(),
-                2, 3, 50,
-                R.drawable.ic_1,new Location(10.2167, 132.6768)));
-        products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 800, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_3,new Location(10.2167, 132.6768)));
-        products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 560, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_4,new Location(10.2167, 132.6768)));
-        products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 560, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_5,new Location(10.2167, 132.6768)));products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 500, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_6,new Location(10.2167, 132.6768)));
-        products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 700, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_3,new Location(10.2167, 132.6768)));
-        products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 300, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_1,new Location(10.2167, 132.6768)));
 
-        products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 400, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_4,new Location(10.2167, 132.6768)));
-        products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 600, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_5,new Location(10.2167, 132.6768)));products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 3000, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_6,new Location(10.2167, 132.6768)));
-        products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 460, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_3,new Location(10.2167, 132.6768)));
-        products.add(new Product("Modern Apartment with beatiful view",
-                "Binh Thanh District", 890, PropertyType.APARTMENT.toString(),
-                3, 3, 75,
-                R.drawable.ic_4,new Location(10.2167, 132.6768)));
-
-    }
 
 }
